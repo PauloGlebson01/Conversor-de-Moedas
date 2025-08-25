@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Convert Money</title>
+</head>
+<body>
+    <img class="logo" src="./assets/hand-money-logo.jpg" alt="logo-convert-money">
+
+    <main>
+            <label>
+                Converter <b>de</b>
+                <select>
+                    <option>R$ Real Brasileiro</option>
+                </select>
+            </label>
+
+            <label>
+                Converter <b>para</b>
+                <select class="currency-select">
+                    <option value="dolar">US$ Dólar americano</option>
+                    <option value="euro">€ Euro</option>
+                </select>
+            </label>
+
+            <label>
+                Valor
+                <input class="input-currency" placeholder="R$10.000,00">
+            </label>
+
+            <button class="Convert-button">Converter</button>
+
+            <section>
+                <div class="currency-box">
+                    <img src="./assets/Real.png" alt="logo-moeda-a-converter">
+                    <p class="currency">Real</p>
+                    <p class="currency-value-to-convert">R$ 0,00</p>
+
+                    <img class="arrow-img" src="./assets/Vector.png" alt="seta">
+
+                    <div class="currency-box">
+                    <img class="currency-img" src="./assets/Dolar.png" alt="logo-moeda-convertida">
+                    <p class="currency" id="currency-name">Dólar americano</p>
+                    <p class="currency-value">US$ 0,00</p>
+                </div>
+            </section>
+    </main>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
